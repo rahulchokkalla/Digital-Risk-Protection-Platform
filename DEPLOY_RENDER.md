@@ -22,7 +22,7 @@ git push -u origin main
    - **Language / Runtime**: `Python 3`
    - **Region**: Choose closest to you (e.g., Singapore, Frankfurt, Oregon)
    - **Branch**: `main`
-   - **Build Command**: `pip install -r requirement.txt`
+   - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `uvicorn main:app --host 0.0.0.0 --port $PORT`
    - **Plan**: `Free`
 
