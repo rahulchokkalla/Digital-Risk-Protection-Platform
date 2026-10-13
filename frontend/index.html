@@ -943,7 +943,9 @@
   </div>
 
   <script>
-    const API = "http://127.0.0.1:8000";
+    const API = window.location.protocol.startsWith("http")
+      ? ""
+      : "http://127.0.0.1:8000";
     let brands = [];
     let scanResults = [];
     let alerts = [];
@@ -975,7 +977,7 @@
           }
         });
       } catch (error) {
-        throw new Error("Cannot reach the backend. Make sure FastAPI is running at " + API + ".");
+        throw new Error("Cannot reach the backend. Check the server connection.");
       }
 
       const raw = await response.text();
