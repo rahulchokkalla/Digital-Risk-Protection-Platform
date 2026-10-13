@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+mysql-connector-python
+python-dotenv
+requests
+google-play-scraper
+rapidfuzz
+pillow
+ImageHash
+python-multipart
